@@ -1,8 +1,6 @@
-resource "aws_s3_bucket" "terraform-state" {
+terraform {
+    backend "S3" {
     bucket = "databasemigrationskillnet"
-    acl = "private"
-
-    tags {
-        Name = "Terraform state"
+    key = "terraform/Statefile"
     }
 }
