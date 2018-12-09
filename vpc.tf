@@ -1,5 +1,5 @@
 module "vpc" {
-  source = "/Module/"
+  source = "github.com/Asthakurok/AWS.git"
 
   name = "hbi-microservice-cluster"
   cidr = "10.0.0.0/16"
